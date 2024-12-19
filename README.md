@@ -18,12 +18,12 @@ This project implements an AIOps tool CroSysLog for log-entry level anomaly dete
 
 The project requires the following libraries:
 
-- Python 3.x
-- PyTorch
-- Transformers (for BERT)
-- Ray (for hyperparameter tuning)
-- Pandas, NumPy, Polars (for data manipulation)
-- Scikit-learn (for data normalization)
+- Python 3.10
+- Torch 2.0.1
+- Transformers 4.30.2 (for BERT)
+- Ray 2.4.0 (for hyperparameter tuning)
+- Pandas 2.0.3, NumPy 1.25.0, Polars 0.19.8 (for data manipulation)
+- Scikit-learn 1.3.0 (for data normalization)
 
 ## Datasets
 
