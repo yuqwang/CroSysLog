@@ -6,7 +6,7 @@ This project implements an AIOps tool CroSysLog for log-entry level anomaly dete
 
 - **`Learner.py`**: Defines the base model that do for log-event level anomaly detection in CroSysLog.
   
-- **`Meta.py`**: Contains the implementation of the MAML algorithm. The `MAML` class manages the meta-training and meta-testing phase for CroSysLog. It trains the base model LSTM defined in `Learner.py`.
+- **`Meta.py`**: Contains the implementation of the MAML algorithm. The `MAML` class manages the meta-training and meta-testing phase for CroSysLog. It trains the base model LSTM defined in `Learner.py`. We considered this repo **[MAML-Pytorch](https://github.com/dragen1860/MAML-Pytorch)** in our implementation.
 
 - **`MetaDataset.py`**: Responsible for sampling, loading, pre-processing datasets for source and target systems. It defines the `MetaDataset` class, which samples the log data from source/target systems for meta-training and meta-testing phases, and create log embeddings using the neural representation method defined in `NeuralParser` class.
 
@@ -27,13 +27,12 @@ The project requires the following libraries:
 
 ## Datasets
 
-This project uses log datasets from four large-scale distributed supercomputing systems—BGL, Thunderbird, Liberty, and Spirit—sourced from the [Usenix CFDR repository](https://www.usenix.org/cfdr). These datasets contain log messages and anomalies from supercomputing environments, making them ideal for testing abnormal trace classification in real-world distributed systems.
+This project uses software log datasets from four large-scale distributed supercomputing systems—BGL, Thunderbird, Liberty, and Spirit—sourced from the [Usenix CFDR repository](https://www.usenix.org/cfdr). We do not hold the right to publicly share these datasets here. Please refer to the original source for downloading the datasets.
 
 ## How to Run
 
-1. **Prepare the Dataset**: For a source/target system, ensure that the dataset is structured properly and contains the necessary log data and anomaly labels. The data should be in CSV format.
+1. **Prepare the Dataset**
    
 2. **Install Dependencies**
 
 3. **Train CroSysLog**
-# mixAEMeta
