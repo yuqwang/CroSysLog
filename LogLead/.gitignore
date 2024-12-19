@@ -1,9 +1,0 @@
-__pycache__/
-*.pyc
-*.pyo
-private_data/
-*_wip.py
-*_wip.yml
-*wip/
-.env
-*latex.txt
